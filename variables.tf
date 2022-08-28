@@ -14,3 +14,13 @@ variable "aws_east_ami" {
 variable "aws_east_instance_type" {
   default = "t2.micro"
 }
+
+variable "provider_region" {
+  type = map
+  
+  default = {
+    staging    = "us-west-1"
+    production = "us-east-1"
+  }
+
+}
