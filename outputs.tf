@@ -1,3 +1,3 @@
 output "output_region" {
-  value = "${var.provider_region[terraform.workspace]}"
+  value = "${local.actual_region}"
 }
